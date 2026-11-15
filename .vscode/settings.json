@@ -1,0 +1,13 @@
+{
+    // 配置Java项目虚拟机参数
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m -Xlog:disable",
+    // 配置Java项目
+    // 必须是相对工作区根目录的路径；${workspaceFolder} 变量不会被展开，会导致源码不在 classpath
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    // 配置Java项目输出路径
+    "java.project.outputPath": "bin",
+    // 启动前强制构建，避免运行到过期的 .class（JDK 版本不一致会报 UnsupportedClassVersionError）
+    "java.debug.settings.forceBuildBeforeLaunch": true
+}

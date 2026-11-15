@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // 主入口：新版登录窗（带选项卡）。mainClass 必须写全限定名，
+            // 否则 JDT 要用简单名反查，容易卡在 "Resolving main class"。
+            // 不写 projectName/cwd：图片走 classpath，启动目录无关。
+            "type": "java",
+            "name": "ClientLoginV2",
+            "request": "launch",
+            "mainClass": "com.JavaChatClient.view.ClientLoginV2",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "ClientLogin",
+            "request": "launch",
+            "mainClass": "com.JavaChatClient.view.ClientLogin",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "FriendList",
+            "request": "launch",
+            "mainClass": "com.JavaChatClient.view.FriendList",
+            "console": "internalConsole"
+        }
+    ]
+}

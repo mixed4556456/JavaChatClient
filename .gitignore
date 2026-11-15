@@ -1,0 +1,24 @@
+# ===== 编译输出 =====
+bin/
+# 只忽略项目根目录下由 Generate*Images 生成的临时占位图；src/images 是真正的素材，必须入库
+# images/ 和 /images/ 不一样, 前者是项目根目录下的 images 目录, 后者是 src 目录下的 images 目录
+/images/
+out/
+build/
+target/
+*.class
+
+# ===== IDE / 编辑器 =====
+.idea/
+*.iml
+*.log
+.vscode/*.log
+
+# ===== 系统文件 =====
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# ===== 验证/截图产物 =====
+friendlist_shot_*.png
+
